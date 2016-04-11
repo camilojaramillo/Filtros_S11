@@ -18,7 +18,7 @@ public class FiltroUno {
 		for (int i = 0; i < imgUno.width; i++) {
 			for (int j = 0; j < imgUno.height; j++) {
 				int uno = i + (j*won.width);
-				if(PApplet.dist(app.mouseX, app.mouseY, i, j)<60) {
+				if(PApplet.dist(app.mouseX, app.mouseY, i, j)<80) {
 					
 				if(app.brightness(won.pixels[uno]) > thres){
 					imgUno.pixels[uno] = app.color(255);
@@ -26,6 +26,8 @@ public class FiltroUno {
 					imgUno.pixels[uno] = app.color(255,0,0);
 				}
 				
+				} else {
+					imgUno.pixels[uno] = won.pixels[uno];
 				}
 			}
 		}
