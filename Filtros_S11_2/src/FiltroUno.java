@@ -10,8 +10,9 @@ public class FiltroUno {
 	}
 	
 	public void pintar(PApplet app){
+		
 		imgUno = app.createImage(won.width, won.height, app.RGB);
-		float thres =130; 
+		float thres = 130; 
 		imgUno.loadPixels();
 		
 		for (int i = 0; i < imgUno.width; i++) {

@@ -14,7 +14,7 @@ public class Logica {
 		case '0':
 			app.fill(0);
 			app.textSize(30);
-			app.text("Presione teclas del 1 al 4 para ver filtros", 180, 300);
+			app.text("Presione teclas del 1 al 4 para ver filtros", 170, 300);
 			break;
 		
 		case '1':
