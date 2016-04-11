@@ -18,14 +18,19 @@ public class FiltroUno {
 		for (int i = 0; i < imgUno.width; i++) {
 			for (int j = 0; j < imgUno.height; j++) {
 				int uno = i + (j*won.width);
+				if(PApplet.dist(app.mouseX, app.mouseY, i, j)<60) {
+					
 				if(app.brightness(won.pixels[uno]) > thres){
 					imgUno.pixels[uno] = app.color(255);
 				} else {
 					imgUno.pixels[uno] = app.color(255,0,0);
 				}
+				
+				}
 			}
 		}
 		imgUno.updatePixels();
+		app.image(won, 0, 0);
 		app.image(imgUno, 0, 0);
 	}
 }
