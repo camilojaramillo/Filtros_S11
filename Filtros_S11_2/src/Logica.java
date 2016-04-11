@@ -3,9 +3,11 @@ import processing.core.PApplet;
 public class Logica {
 
 	public FiltroUno fUno;
+	public FiltroTres fTres;
 	
 	public Logica(PApplet app){
 		fUno = new FiltroUno(app);
+		fTres=new FiltroTres();
 	}
 	
 	public void pintar(PApplet app) {
@@ -22,6 +24,11 @@ public class Logica {
 			break;
 			
 		case '2':
+			
+			break;
+			
+		case '3':
+			fTres.pintar(app);
 			break;
 		}
 	}
