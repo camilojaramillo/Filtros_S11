@@ -5,7 +5,6 @@ public class Logica {
 	public FiltroUno fUno;
 	public FiltroDos fDos;
 	public FiltroTres fTres;
-
 	
 	public Logica(PApplet app){
 		fUno = new FiltroUno(app);
@@ -27,7 +26,7 @@ public class Logica {
 			break;
 			
 		case '2':
-			fDos.pintar(app);
+			fDos.pintar(app);			
 			break;
 			
 		case '3':

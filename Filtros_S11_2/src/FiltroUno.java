@@ -31,7 +31,6 @@ public class FiltroUno {
 				}
 			}
 		}
-		//x
 		imgUno.updatePixels();
 		app.image(won, 0, 0);
 		app.image(imgUno, 0, 0);
